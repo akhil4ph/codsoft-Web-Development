@@ -3,150 +3,149 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Landing Page</title>
 </head>
 
 <body>
-    <div class="container">
-        <nav>
-            <div class="logo">
-                <h1>PORT<span>FOLIO</span></h1>
-            </div>
+    <nav>
+        <div class="heading">JB Knowledge Park</div>
+        <span class="sideMenuButton" onclick="openNavbar()">
+            &#9776
+        </span>
+
+        <div class="navbar">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="About">About</a></li>
-                <li><a href="Skills"> Skills</a></li>
-                <li><a href="Projects">Projects</a></li>
-                <li><a href="Contact">Contact</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Sign Up">Sign Up</a></li>
             </ul>
-            <i id="bar" class="fa-solid fa-bars"></i>
-        </nav>
-
-        <div class="main">
-            <div class="mainText">
-                <h3>Heyyy, I am</h3>
-                <h1><span>Akhil</span> </h1> 
-                <h2>and I am Passionate</h2> 
-                <h1><span>Web Developer</span></h1>
-                <button id="cvBtn">DownLoad CV</button>
-
-               
-            </div>
-            <img src="bg.png" alt="">
         </div>
+    </nav>
 
-        <div class="aboutus" id="about">
-            <div class="head">
-                <h1>About <span>Us</span></h1>
-            </div>
-            <div class="about">
-                <img src="developer.png" alt="">
-                <div class="aboutText">
-                    <h2>Web <span>Developer</span></h2>
-                    <p>Experiences : <span>6 Months</span> </p>
-                    <p>Speciality : <span>Website Devlopment</span> </p>
-                    <p>Email : <span>akhilanangjha@gmail.com</span> </p>
+    <!-- Side navigation bar for 
+        responsive website -->
+    <div class="sideNavigationBar" id="sideNavigationBar">
+        <a href="#" class="closeButton" onclick="closeNavbar()">
+            &#x274C
+        </a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Sign Up</a>
+    </div>
 
-                </div>
-            </div>
+    <!-- Content -->
+    <div class="line" id="Home">
+        <div class="side1">
+            <h1>PLACEMENTS</h1>
+            <button>
+          Explore More 
+            </button>
         </div>
-
-        <div class="services" id="service">
-            <div class="head">
-                <h1>My <span>Skills</span></h1>
-            </div>
-            <div class="service">
-                <div class="card">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Web Development</h3>
-                    <p>I have web development knowledge, which involves creating and styling web pages using HTML for
-                        structure, CSS for presentation and layout, and JavaScript for adding interactivity and dynamic
-                        behavior. These skills enable me to build visually appealing and functional websites.</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>C/C++</h3>
-                    <p>With a solid foundation in C and C++, I already have a strong grasp of programming fundamentals
-                        such as data structures, and algorithmic problem-solving. These skills are valuable for
-                        understanding lower-level system operations and enhancing my efficiency in writing optimized
-                        code.</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>MS Office</h3>
-                    <p>I have knowledge in MS Office, which includes proficiency in Word for document creation and
-                        editing, Excel for data analysis and spreadsheet management, PowerPoint for creating engaging
-                        presentations, and Outlook for email communication and scheduling. This skill set enables me to
-                        efficiently handle various administrative and professional tasks.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="works" id="works">
-            <div class="head">
-                <h1>My <span>Projects</span></h1>
-
-            </div>
-            <div class="myWork">
-                <div class="workCard">
-                    <img src="calculator.png" alt="">
-                    <p>Calculator</p>
-                    <a href="" >checkout</a>
-                </div>
-                <div class="workCard">
-                    <img src="Landing page.png" alt="">
-                    <p>Landing Page</p>
-                    <a href="landing.png" target="_blank">checkout</a>
-                </div>
-                <div class="workCard">
-                    <img src="portfolio (2).png" alt="">
-                    <p>Portfolio</p>
-                    <a href="portfolio.png" target="_blank">checkout</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="connect" id="connect">
-            <div class="head">
-                <h1>Contact <span>Us</span></h1>
-            </div>
-            <div class="contact">
-                <p>Email : </p>
-                <input type="text" placeholder="Enter Email" id="email">
-                <p>Password : </p>
-                <input type="password" placeholder="Enter Password" id="pass">
-                <p>Message : </p>
-                <input type="text" placeholder="Enter Message" id="msg">
-                <button id="submit">submit</button>
-            </div>
-        </div>
-        <div class="footer">
-                <ul>
-                    <li><a href="">YouTube</a></li>
-                    <li><a href="">WhatsApp</a></li>
-                    <li><a href="">Facebook</a></li>
-                    <li><a href="">Twitter</a></li>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Skype</a></li>
-                    <li><a href="">Call Me</a></li>
-                </ul>
-                <ul>
-                    <li><p>&copy; 2024 Jha Asit Ankur Sarojkumar.All rights reserved</p></li>
-                </ul>
-            </div>
+        <div class="side2">
+            <img src="jb.image.jpg"
+                width="250">
         </div>
     </div>
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Video Editor', 'Web Designer', 'Graphics Designer'],
-            typeSpeed: 50,
-        });
-    </script>
 
+    <section class="about" id="My Projects">
+        <div class="content">
+            <div class="title">
+                <span>Courses</span>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic">
+                        <a href="" target="_blank">
+                            BTECH
+                        </a>
+                    </div>
+                    <p>JB Knowledge Park in Manjhawali offers a Bachelor of Technology (B.Tech) program that provides students with a solid foundation in various engineering disciplines. With a focus on innovative learning and hands-on experience, the institution emphasizes the development of technical skills, critical thinking, and problem-solving abilities. The campus is equipped with modern laboratories, experienced faculty, and industry-aligned curricula, which prepare students for successful careers in engineering. JB Knowledge Park fosters a vibrant academic environment that encourages research, creativity, and professional growth among its students.
+                    </p>
+                </div>
+                <div class="box">
+
+                    <div class="topic">
+                        <a href="" target="_blank">
+                            BCA
+                        </a>
+                    </div>
+                    <p>
+                        JB Knowledge Park, located in Manjhawali, offers a comprehensive Bachelor of Computer Applications (BCA) program designed to provide students with a strong foundation in computer science and information technology. The curriculum covers a wide range of topics, including programming languages, database management, networking, web development, and software engineering. With state-of-the-art infrastructure, experienced faculty, and hands-on learning opportunities, JB Knowledge Park ensures that students are well-equipped to meet the demands of the IT industry, preparing them for successful careers in the digital age.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <div class="topic">
+                        <a href="" target="_blank">
+                            BBA
+                        </a>
+                    </div>
+                    <p>
+                        The Bachelor of Business Administration (BBA) program at JB Knowledge Park, located in Manjhawali, is designed to equip students with a strong foundation in business principles and management practices. The course focuses on providing a blend of theoretical knowledge and practical skills in areas such as finance, marketing, human resources, and entrepreneurship. With modern infrastructure, experienced faculty, and a dynamic learning environment, JB Knowledge Park ensures students are well-prepared to meet the challenges of the corporate world and succeed in their professional careers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="content">
+            <div class="title"><span>Get Counseling</span></div>
+            <div class="contactMenu">
+                <div class="input1">
+                    <div class="label1">Your Name</div>
+                    <div class="input2">
+                        <input type="text" placeholder="Enter your Name here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Email</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" placeholder="Enter your Email here">
+                    </div>
+                    <div class="label1">
+                        <label>Mobile Number</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" placeholder="Mobile Number">
+                    </div>
+                    <div class="button">
+                        <button>Get Start</button>
+                    </div>
+                </div>
+                <div class="input3">
+                    <div class="rightside1">
+                        <div class="title1">
+                            <span>
+                                Contact Us
+                            </span>
+                        </div>
+                        <div class="content1">
+                           JB knowledge Park Manjhawali, Ballabgarh, Haryana, 121101
+                        </div>
+                        <div class="title1">
+                            <span>More Information</span>
+                        </div>
+                        <div class="content1">
+                            JB Knowledge Park offers a range of IT and management courses across various programs, including BBA, BCA, B.Tech, MBA, M.Tech, and MCA. These courses are designed to equip students with essential skills in technology and business management, preparing them for dynamic roles in the corporate world. With a focus on both theoretical understanding and practical application, the programs provide a holistic approach to education, ensuring graduates are ready to excel in diverse industries and technological advancements.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer>
+        <div class="footer">
+            <span>
+                Created By Coders
+            </span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
